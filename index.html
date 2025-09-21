@@ -1,29 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Weather app</title>
-
- 
-    </style>
   </head>
   <body>
-    <a href="#main" class="visually-hidden">Skip to the main content</a>
+    <a href="#main" class="visually--hidden">Skip to the main content</a>
 
-    <header >
+    <header>
       <a href="/">
-        <img src="/assets/images/logo.svg" alt="Weather Now home" width="197" height="40">
+        <img
+          src="/assets/images/logo.svg"
+          alt="Weather Now home"
+          width="197"
+          height="40"
+        />
       </a>
       <select name="units" id="units">
-       <option value="">Units</option>
+        <option value="">Units</option>
       </select>
     </header>
 
-    <main id="main"></main>
+    <main id="main">
+      <!--HERO Section-->
+      <section class="hero">
+        <h1>How’s the sky looking today?</h1>
+        <div class="hero--search">
+          <input class="hero--textBox" type="text" name="Search" id="search" />
+          <button class="hero--btn" type="submit">Search</button>
+        </div>
+      </section>
+
+      <!--Current Location weather Section-->
+      <section class="current">
+        <h2 class="visually--hidden">Current Location Temperature</h2>
+        <div class="current--weather">
+          <div class="current--location">
+            <div class="current--city">Gitega,Burundi</div>
+            <div class="current--date">sun,sept 21,2025</div>
+          </div>
+          <div class="current--icon">
+            <img
+              src="/assets//images/icon-sunny.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+          </div>
+          <div class="current--degree"><span>20</span>&deg;</div>
+        </div>
+        <div class="current--conditions">
+          <div class="current--condition">
+            <p class="current--condition-title">Feels like</p>
+            <p id="feelsLike" class="current--condition-value">18&deg;</p>
+          </div>
+          <div class="current--condition">
+            <p class="current--condition-title">Humidity</p>
+            <p id="humidity" class="current--condition-value">46%</p>
+          </div>
+          <div class="current--condition">
+            <p class="current--condition-title">Wind Speed</p>
+            <p id="wind" class="current--condition-value">45 km/h</p>
+          </div>
+          <div class="current--condition">
+            <p class="current--condition-title">Precipitation</p>
+            <p id="precipitation" class="current--condition-value">0 mm</p>
+          </div>
+        </div>
+      </section>
+      <section class="daily">
+        <h2 class="section--title daily--title">Daily forecast</h2>
+        <div class="daily--forecast">
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+          <div class="daily--day">
+            <p class="daily--day-title">Tue</p>
+            <img
+              src="/assets/images/icon-rain.webp"
+              alt=""
+              width="320"
+              height="320"
+            />
+            <div class="daily--day-temps">
+              <p class="daily--day-high">20&deg;</p>
+              <p class="daily--day-low">20&deg;</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hourly">
+        <h2 class="section--title daily--title">Hourly forecast</h2>
+      </section>
+    </main>
     <!-- Units
 
   Switch to Imperial/Metric
@@ -63,7 +209,5 @@
     <!-- Insert daily forecast for the next 7 days here -->
     <!-- Hourly forecast -->
     <!-- Insert hourly forecast for the selected day here -->
-
-    
   </body>
 </html>
