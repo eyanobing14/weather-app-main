@@ -1,122 +1,240 @@
-/* dm-sans-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/assets/fonts/dm-sans-v17-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* dm-sans-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/assets/fonts/dm-sans-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* dm-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/assets/fonts/dm-sans-v17-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* dm-sans-600italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "DM Sans";
-  font-style: italic;
-  font-weight: 600;
-  src: url("/assets/fonts/dm-sans-v17-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* dm-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/fonts/dm-sans-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* montserrat-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-:root {
-  --c-neutral-900: #101522;
-  --c-neutral-800: #182032;
-  --c-neutral-700: #22304a;
-  --c-neutral-600: #2e3e5c;
-  --c-neutral-300: #6c7a92;
-  --c-neutral-200: #b3bed1;
-  --c-neutral-0: #f6f8fa;
-  --c-orange-500: #ff9100;
-  --c-blue-500: #4253e6;
-  --c-blue-700: #3a2e7a;
+@layer global {
+  /* dm-sans-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/assets/fonts/dm-sans-v17-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/fonts/dm-sans-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/assets/fonts/dm-sans-v17-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-600italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: url("/assets/fonts/dm-sans-v17-latin-600italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* dm-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/dm-sans-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/montserrat-v31-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  :root {
+    --c-neutral-900: #0a0a1f;
+    --c-neutral-800: #242238;
+    --c-neutral-700: #22304a;
+    --c-neutral-600: #2e3e5c;
+    --c-neutral-300: #6c7a92;
+    --c-neutral-200: #b3bed1;
+    --c-neutral-0: #f6f8fa;
+    --c-orange-500: #ff9100;
+    --c-blue-500: #4253e6;
+    --c-blue-700: #373d9e;
 
-  --color-main-bg: var(--c-neutral-900);
-  --color-text-lv1: var(--c-neutral-0);
-  --color-text-lv2: var(--c-neutral-200);
-  --color-box-bg-dark: var(--c-neutral-800);
-  --color-box-bg-md: var(--c-neutral-700);
-  --color-box-bg-light: var(--c-neutral-600);
-  --color-box-border: var(--c-neutral-600);
-  --color-btn-bg: var(--c-blue-500);
+    --color-main-bg: var(--c-neutral-900);
+    --color-text-lv1: var(--c-neutral-0);
+    --color-text-lv2: var(--c-neutral-200);
+    --color-box-bg-dark: var(--c-neutral-800);
+    --color-box-bg-md: var(--c-neutral-700);
+    --color-box-bg-light: var(--c-neutral-600);
+    --color-box-border: var(--c-neutral-600);
+    --color-btn-bg: var(--c-blue-500);
 
-  --color-box-bg-dark-hover: var(--c-neutral-700);
-  --color-btn-bg-hover: var(--c-blue-700);
+    --color-box-bg-dark-hover: var(--c-neutral-700);
+    --color-btn-bg-hover: var(--c-blue-700);
 
-  --fs-96: calc(96 / 16 * 1rem);
-  --fs-52: calc(52 / 16 * 1rem);
-  --fs-32: calc(32 / 16 * 1rem);
-  --fs-28: calc(28 / 16 * 1rem);
-  --fs-20: calc(20 / 16 * 1rem);
-  --fs-18: calc(18 / 16 * 1rem);
-  --fs-16: calc(16 / 16 * 1rem);
-  --fs-14: calc(14 / 16 * 1rem);
+    --fs-96: calc(96 / 16 * 1rem);
+    --fs-52: calc(52 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --fs-28: calc(28 / 16 * 1rem);
+    --fs-20: calc(20 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem);
+    --fs-14: calc(14 / 16 * 1rem);
 
-  --fontSize-h1: var(--fs-52);
-  --fontSize-dropdown: var(--fs-14);
-  --fontSize-search: var(--fs-20);
-  --fontSize-btn: var(--fs-20);
-  --fontSize-city: var(--fs-28);
-  --fontSize-date: var(--fs-18);
-  --fontSize-temperature: var(--fs-96);
-  --fontSize-box-title: var(--fs-18);
-  --fontSize-box-value: var(--fs-32);
-  --fontSize-forecast-title: var(--fs-20);
-  --fontSize-forecast-day: var(--fs-18);
-  --fontSize-forecast-temp: var(--fs-16);
-  --fontSize-forecast-dropdown: var(--fs-16);
-  --fontSize-forecast-hour: var(--fs-20);
+    --fontSize-h1: var(--fs-52);
+    --fontSize-dropdown: var(--fs-14);
+    --fontSize-search: var(--fs-20);
+    --fontSize-btn: var(--fs-20);
+    --fontSize-city: var(--fs-28);
+    --fontSize-date: var(--fs-18);
+    --fontSize-temperature: var(--fs-96);
+    --fontSize-box-title: var(--fs-18);
+    --fontSize-box-value: var(--fs-32);
+    --fontSize-forecast-title: var(--fs-20);
+    --fontSize-forecast-day: var(--fs-18);
+    --fontSize-forecast-temp: var(--fs-16);
+    --fontSize-forecast-dropdown: var(--fs-16);
+    --fontSize-forecast-hour: var(--fs-20);
 
-  @media (width >= calc(700 / 16 * 1rem)) {
-    --fontSize-dropdown: var(--fs-16);
+    @media (width >= calc(700 / 16 * 1rem)) {
+      --fontSize-dropdown: var(--fs-16);
+    }
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  body {
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: var(--color-main-bg);
+    color: var(--color-text-lv1);
+    letter-spacing: 0.4px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  input,
+  textarea,
+  button {
+    font: inherit;
+    width: 100%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr calc(100% - 32px) 1fr;
+
+    @media (width >= calc(700/ 16 * 1rem)) {
+      grid-template-columns: 1fr min(calc(100% - 96px), calc(1216 / 16 * 1rem)) 1fr;
+    }
+
+    > * {
+      grid-column: 2;
+    }
+  }
+  .visually--hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    &.skip--link:focus {
+      left: 0;
+      width: auto;
+      height: auto;
+      background-color: var(--color-main-bg);
+      color: var(--color-text-lv1);
+      padding: 12px;
+      border: 2px solid var(--color-text-lv2);
+    }
   }
 }
+@layer component {
+  .header {
+    .header--content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block-start: 24px;
+    }
+    .header--logo {
+      width: calc(137 / 16 * 1rem);
+      @media (width >= calc(700 / 16 * 1rem)) {
+        width: calc(197 / 16 * 1rem);
+      }
+    }
+    .header--homelink {
+    }
+    .header--dropdown {
+      width: calc(90 / 16 * 1rem);
+    }
+  }
+  .hero {
+    .hero--content {
+      padding-block-start: 48px;
+      display: grid;
+      justify-items: center;
+    }
+    .hero--title {
+      font-size: var(--fontSize-h1);
+      margin-block-end: 32px;
+      text-align: center;
+      line-height: 1.2;
+      letter-spacing: -1.2px;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-img {
-  max-width: 100%;
-}
-body {
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-}
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+      @media (width >= calc(700 / 16 * 1rem)) {
+        width: 15ch;
+      }
+    }
+    .hero--search {
+      display: grid;
+      gap: calc(12 / 16 * 1rem) 1rem;
+      width: 100%;
+      @media (width >= calc(700 / 16 * 1rem)) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+      }
+    }
+    .hero--textBox {
+      background: url(/assets/images/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: 24px center;
+      border: none;
+      background-color: var(--color-box-bg-dark);
+      font-size: var(--fontSize-search);
+      padding: 12px 20px 12px 64px;
+      color: var(--color-text-lv2);
+      border-radius: 12px;
+
+      &:focus {
+        outline: 2px solid --color-text-lv2;
+      }
+    }
+    .hero--btn {
+      background-color: var(--color-btn-bg);
+      border: none;
+      font-size: var(--fontSize-search);
+      color: var(--color-text-lv1);
+      padding-block: 12px;
+      border-radius: 12px;
+      transition: background-color 120ms ease-in-out;
+      cursor: pointer;
+      font-weight: 300;
+
+      &:hover {
+        background-color: var(--color-btn-bg-hover);
+      }
+    }
+  }
 }

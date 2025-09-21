@@ -2,39 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Weather app</title>
   </head>
   <body>
-    <a href="#main" class="visually--hidden">Skip to the main content</a>
+    <a href="#main" class="visually--hidden skip--link"
+      >Skip to the main content</a
+    >
 
-    <header>
-      <a href="/">
-        <img
-          src="/assets/images/logo.svg"
-          alt="Weather Now home"
-          width="197"
-          height="40"
-        />
-      </a>
-      <select name="units" id="units">
-        <option value="">Units</option>
-      </select>
+    <header class="header wrapper">
+      <div class="header--content">
+        <a href="/" class="header--homelink">
+          <img
+            src="/assets/images/logo.svg"
+            alt="Weather Now home"
+            width="197"
+            height="40"
+            class="header--logo"
+          />
+        </a>
+        <select name="units" id="units" class="header--dropdown">
+          <option value="">Units</option>
+        </select>
+      </div>
     </header>
 
     <main id="main">
       <!--HERO Section-->
-      <section class="hero">
-        <h1>How’s the sky looking today?</h1>
-        <div class="hero--search">
-          <input class="hero--textBox" type="text" name="Search" id="search" />
-          <button class="hero--btn" type="submit">Search</button>
+      <section class="hero wrapper">
+        <div class="hero--content">
+          <h1 class="hero--title">How’s the sky looking today?</h1>
+          <div class="hero--search">
+            <input
+              class="hero--textBox"
+              type="text"
+              name="Search"
+              id="search"
+            />
+            <button class="hero--btn" type="submit">Search</button>
+          </div>
         </div>
       </section>
 
       <!--Current Location weather Section-->
-      <section class="current">
+      <section class="current wrapper">
         <h2 class="visually--hidden">Current Location Temperature</h2>
         <div class="current--weather">
           <div class="current--location">
@@ -70,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section class="daily">
+      <section class="daily wrapper">
         <h2 class="section--title daily--title">Daily forecast</h2>
         <div class="daily--forecast">
           <div class="daily--day">
@@ -166,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="hourly">
+      <section class="hourly wrapper">
         <div class="hourly--header">
           <h2 class="section--title hourly--title">Hourly forecast</h2>
           <select name="hourly-day" id="hourlyDay">
@@ -175,42 +188,90 @@
         </div>
         <div class="hourly--hours">
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-sunny.webp"
+              width="40"
+              height="40"
+              alt="Sunny"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-partly-cloudy.webp"
+              width="40"
+              height="40"
+              alt="Partly Cloudy"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-snow.webp"
+              width="40"
+              height="40"
+              alt="Cloudy"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-rain.webp"
+              width="40"
+              height="40"
+              alt="Rain"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-storm.webp"
+              width="40"
+              height="40"
+              alt="Storm"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-snow.webp"
+              width="40"
+              height="40"
+              alt="Snow"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-fog.webp"
+              width="40"
+              height="40"
+              alt="Fog"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
           <div class="hourly--hour">
-            <img class="hourly--hour-icon" width="40" height="40" alt="" />
+            <img
+              class="hourly--hour-icon"
+              src="assets/images/icon-drizzle.webp"
+              width="40"
+              height="40"
+              alt="Drizzle"
+            />
             <p class="hourly--hour-time">3 PM</p>
             <p class="hourly--hour-temp">18&deg;</p>
           </div>
