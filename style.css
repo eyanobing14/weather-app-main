@@ -192,7 +192,10 @@
       text-align: center;
       line-height: 1.2;
       letter-spacing: -1.2px;
-
+      color: var(--color-text-lv2);
+      span {
+        color: var(--color-btn-bg-hover);
+      }
       @media (width >= calc(700 / 16 * 1rem)) {
         width: 15ch;
       }
@@ -207,6 +210,8 @@
       }
     }
     .hero--textBox {
+      outline: none;
+      box-shadow: none;
       background: url(/assets/images/icon-search.svg);
       background-repeat: no-repeat;
       background-position: 24px center;
@@ -216,9 +221,23 @@
       padding: 12px 20px 12px 64px;
       color: var(--color-text-lv2);
       border-radius: 12px;
+      font-weight: 300;
+      position: relative;
+      z-index: 1;
+      /* Effet border animé */
+      box-shadow: 0 0 0 0 var(--color-btn-bg-hover) inset;
+      transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:focus {
-        outline: 2px solid --color-text-lv2;
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--color-btn-bg-hover) inset;
+      }
+      &:focus,
+      &:active {
+        transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 100%;
       }
     }
     .hero--btn {
@@ -232,9 +251,79 @@
       cursor: pointer;
       font-weight: 300;
 
-      &:hover {
+      &:hover,
+      &.hero--btn.clided {
         background-color: var(--color-btn-bg-hover);
       }
+    }
+  }
+  .current {
+    margin-block-start: 36px;
+
+    .current--weather {
+      background-image: url(assets/images/bg-today-small.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: grid;
+      justify-items: center;
+      padding: 1rem;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .current--location {
+      font-weight: 300;
+      text-align: center;
+      letter-spacing: 0.8;
+    }
+    .current--city {
+      font-size: var(--fs-28);
+      line-height: 1;
+
+      text-align: center;
+      color: var(--color-text-lv1);
+      text-transform: uppercase;
+      padding-block: 12px;
+
+      span {
+        color: var(--color-text-lv2);
+        font-size: var(--fs-20);
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: -0.125px;
+      }
+      br {
+        width: 0;
+        height: 0;
+      }
+    }
+
+    .current--info {
+      display: flex;
+      align-items: center;
+    }
+    .current--date {
+      font-size: var(--fontSize-date);
+      color: var(--color-text-lv2);
+    }
+    .current--icon {
+      width: 120px;
+      height: 120px !important;
+      margin-left: -42px;
+    }
+    .current--degree {
+      font-size: var(--fs-52);
+      color: var(--color-text-lv2);
+      letter-spacing: -2px;
+      font-style: italic;
+    }
+    .current--conditions {
+    }
+    .current--condition {
+    }
+    .current--condition-title {
+    }
+    .current--condition-value {
     }
   }
 }

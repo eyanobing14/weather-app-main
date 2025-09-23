@@ -33,13 +33,14 @@
       <!--HERO Section-->
       <section class="hero wrapper">
         <div class="hero--content">
-          <h1 class="hero--title">How’s the sky looking today?</h1>
+          <h1 class="hero--title">How’s the <span>sky looking </span>today?</h1>
           <div class="hero--search">
             <input
               class="hero--textBox"
               type="text"
               name="Search"
               id="search"
+              placeholder="Search for a place..."
             />
             <button class="hero--btn" type="submit">Search</button>
           </div>
@@ -51,18 +52,23 @@
         <h2 class="visually--hidden">Current Location Temperature</h2>
         <div class="current--weather">
           <div class="current--location">
-            <div class="current--city">Gitega,Burundi</div>
+            <div class="current--city">
+              Burundi
+              <br />
+              <span>Gitega</span>
+            </div>
             <div class="current--date">sun,sept 21,2025</div>
           </div>
-          <div class="current--icon">
+          <div class="current--info">
             <img
+              class="current--icon"
               src="/assets//images/icon-sunny.webp"
               alt=""
               width="320"
               height="320"
             />
+            <div class="current--degree"><span>20</span>&deg;</div>
           </div>
-          <div class="current--degree"><span>20</span>&deg;</div>
         </div>
         <div class="current--conditions">
           <div class="current--condition">
@@ -317,5 +323,6 @@
     <!-- Insert daily forecast for the next 7 days here -->
     <!-- Hourly forecast -->
     <!-- Insert hourly forecast for the selected day here -->
+    <script src="script.js"></script>
   </body>
 </html>
