@@ -130,6 +130,12 @@
     font: inherit;
     width: 100%;
   }
+  select {
+    background-color: var(--color-box-bg-dark);
+    color: var(--color-text-lv1);
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: 1fr calc(100% - 32px) 1fr;
@@ -429,7 +435,7 @@
       margin-block-end: 24px;
     }
     .hourly--title {
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.4px;
       color: var(--color-text-lv2);
     }
