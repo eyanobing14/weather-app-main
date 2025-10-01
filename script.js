@@ -18,7 +18,6 @@ async function getData() {
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-
     const result = await response.json();
     console.log(result);
     // Traitez les résultats ici, par exemple, affichez les coordonnées ou mettez à jour l'interface
