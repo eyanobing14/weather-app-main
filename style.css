@@ -133,8 +133,10 @@
   select {
     background-color: var(--color-box-bg-dark);
     color: var(--color-text-lv1);
-    padding: 8px 12px;
-    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
   }
   .wrapper {
     display: grid;
@@ -196,8 +198,26 @@
     }
     .header--homelink {
     }
+    .header--dropdown-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: calc(40 / 16 * 1rem);
+      background-color: var(--color-box-bg-dark);
+      padding: 8px 8px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      cursor: pointer;
+      align-items: center;
+    }
     .header--dropdown {
-      width: calc(90 / 16 * 1rem);
+      /* width: calc(40 / 16 * 1rem); */
+      font-size: var(--fs-16);
+    }
+    .header--dropdown-option {
+      background-color: var(--color-box-bg-dark-hover);
+      padding: 24px;
     }
   }
   .main-stack {
